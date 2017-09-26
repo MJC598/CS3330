@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Mjc6r9Notifier.jnlp">
+  <information>
+    <title>Mjc6r9Notifier</title>
+    <vendor>mcarroll</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Mjc6r9Notifier.jar" size="3232" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Mjc6r9Notifier" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mjc6r9notifier.Mjc6r9Notifier"  name="Mjc6r9Notifier" />
+  <update check="always"/>
+</jnlp>
