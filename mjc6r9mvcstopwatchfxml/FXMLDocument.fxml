@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mjc6r9mvcstopwatchfxml.FXMLDocumentController">
+   <children>
+      <VBox fx:id="holder" prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="analogHolder" prefHeight="241.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="analogFace" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clockface.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="hand" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hand.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Label fx:id="digital" alignment="CENTER" contentDisplay="CENTER" prefHeight="115.0" prefWidth="600.0" text="00:00:00:00">
+               <font>
+                  <Font name="Times New Roman" size="58.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </Label>
+            <HBox fx:id="buttons" prefHeight="85.0" prefWidth="375.0" spacing="25.0">
+               <children>
+                  <Button fx:id="startStopButton" mnemonicParsing="false" onAction="#handleStartStopButton" prefHeight="39.0" prefWidth="150.0" text="Start" />
+                  <Button fx:id="lapResetButton" mnemonicParsing="false" onAction="#handleLapResetButton" prefHeight="39.0" prefWidth="150.0" text="Lap" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="110.0" right="110.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
